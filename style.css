@@ -5,7 +5,7 @@
 
 body {
    background-color: #2E2E2E;
-    font-size: 15pt;
+    font-size: 20pt;
     color: #F5F3E7;
     margin: 0;
 }
@@ -36,6 +36,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
+    margin-left: 5pt;
+    margin-right: 5pt;
 }
 
 img{
@@ -54,4 +56,10 @@ img{
 .Licenza{
     font-size: 5pt;
     margin: 0.5rem 1rem 0 0;
+}
+
+@media(max-width: 600px) {
+    body{
+        font-size: 15pt;
+    }
 }
