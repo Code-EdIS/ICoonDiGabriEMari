@@ -15,7 +15,7 @@ h1, p{
 }
 
 footer{
-    position: fixed;
+    position: relative;
     background-color: #3F4A44;
     width: 100%;
     bottom: 0;
@@ -54,7 +54,7 @@ img{
 }
 
 .Licenza{
-    font-size: 5pt;
+    font-size: 7pt;
     margin: 0.5rem 1rem 0 0;
 }
 
@@ -68,7 +68,7 @@ img{
     will-change: transform, filter;
 }
 
-.Container .Imglink:hover{
+.Container:hover .Imglink{
     transform: scale(1.1);
     filter: blur(2px);
 }
