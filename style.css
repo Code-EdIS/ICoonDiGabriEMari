@@ -35,7 +35,6 @@ footer{
 .Crocevia{
     display: grid;
     position: relative;
-    display: inline-block;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     margin-left: 5pt;
