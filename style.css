@@ -66,9 +66,10 @@ img{
 .ImgLink{
     display: block;
     will-change: transform, filter;
+    transition: transform 1 ease, filter 1 ease;
 }
 
-.Container:hover .Imglink{
+.Container .ImgLink:hover {
     transform: scale(1.1);
     filter: blur(2px);
 }
@@ -81,6 +82,7 @@ img{
     opacity: 0;
     transform: opacity 0.5s ease;
     pointer-events: none;
+    font-family: 'Rock Salt';
 }
 
 .Container:hover .Desc{
