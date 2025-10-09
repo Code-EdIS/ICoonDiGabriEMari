@@ -3,7 +3,7 @@
   Secondario: #3F4A44
   testo #F5F3E7*/
 
-body {
+body{
    background-color: #2E2E2E;
     font-size: 20pt;
     color: #F5F3E7;
@@ -58,8 +58,40 @@ img{
     margin: 0.5rem 1rem 0 0;
 }
 
+.Container{
+    position: relative;
+    display: inline-block;
+}
+
+.ImgLink{
+    display: block;
+    will-change: transform, filter;
+}
+
+.Container .Imglink:hover{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.Desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -90%);
+    transaction: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.Container .Desc:hover{
+    opacity: 1;
+}
+
 @media(max-width: 600px) {
     body{
+        font-size: 15pt;
+    }
+    
+    footer{
         font-size: 15pt;
     }
 }
