@@ -83,14 +83,6 @@ img{
     line-height: 1.3;
 }
 
-.Genitori{
-    left: -15%;
-}
-
-.Noi{
-    left: 10%;
-}
-
 .Singolo:hover .Desc{
     opacity: 1;
 }
@@ -109,15 +101,50 @@ img{
     border-radius: 50%;
 }
 
+.Numeri{
+    position: relative;
+}
+
+.DatiNascosti{
+    display: inline;
+    transition: filter 0.4 ease;
+}
+
+.Numeri .DatiNascosti:active{
+    filter: opacity(0);
+}
+
+.DatiSensibili{
+    position: absolute;
+    bottom: -32%;
+    left: 6%;
+    opacity: 0;
+    pointer-events: none;
+    transition: filter 0.4 ease;
+    font-size: 16pt;
+}
+
+.Numeri:active .DatiSensibili{
+    opacity: 1;
+}
+
 @media(max-width: 600px) {
     body{
         font-size: 15pt;
     }
     
-    .Desc{
+    .Desc, .DatiSensibili{
         font-size: 10pt;
     }
     
+    .Genitori{
+     left: -15%;
+    }
+
+    .Noi{
+        left: 10%;
+    }
+
     footer{
         font-size: 15pt;
     }
