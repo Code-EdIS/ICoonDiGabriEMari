@@ -34,7 +34,6 @@ footer{
 
 .Crocevia{
     display: grid;
-    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     margin-left: 5pt;
@@ -59,36 +58,51 @@ img{
     margin: 0.5rem 1rem 0 0;
 }
 
+.Singolo{
+    position: relative;
+    display: inline-block;
+}
+
 .ImgLink{
     display: block;
     will-change: transform, filter;
     transition: transform 1 ease, filter 1 ease;
 }
 
-.Crocevia .ImgLink:hover {
+.Singolo .ImgLink:hover {
     transform: scale(1.1);
     filter: blur(3px);
 }
 
 .Desc{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -90%);
+    top: -1%;
     opacity: 0;
     transform: opacity 0.5s ease;
     pointer-events: none;
     font-family: 'Rock Salt';
+    text-align: center;
     line-height: 1.3;
 }
 
-.Crocevia:hover .Desc{
+.Genitori{
+    left: -15%;
+}
+
+.Noi{
+    left: 10%;
+}
+
+.Singolo:hover .Desc{
     opacity: 1;
 }
 
 @media(max-width: 600px) {
     body{
         font-size: 15pt;
+    }
+    .Desc{
+        font-size: 10pt;
     }
     
     footer{
