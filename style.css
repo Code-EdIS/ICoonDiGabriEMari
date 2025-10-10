@@ -71,7 +71,7 @@ img{
 
 .Singolo .ImgLink:hover {
     transform: scale(1.1);
-    filter: blur(3px);
+    filter: blur(10px);
 }
 
 .Desc{
