@@ -87,6 +87,50 @@ img{
     opacity: 1;
 }
 
+.CroceNoMouse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+    position: relative;
+}
+
+.Discesa{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    transition: max-height 0.5 ease, padding 0.5 ease;
+    gap: 20px;
+}
+
+.Discesa a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.Menu span{
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+.Menu-toggle{
+    display: none;
+}
+
 .Animale{
     display: flex;
     justify-content: space-between;
@@ -139,6 +183,20 @@ img{
     
     .Genitori{
      left: -15%;
+    }
+    
+    .Menu{
+        display: flex;
+    }
+    
+    .Discesa{
+        position: relative;
+        width: 100%;
+    }
+    
+    .Menu-toggle:checked + .Menu + .Discesa{
+        max-height: 500px;
+        padding: 15px 0 0 50px;
     }
 
     .Noi{
