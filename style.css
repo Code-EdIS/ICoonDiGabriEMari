@@ -172,6 +172,22 @@ img{
     opacity: 1;
 }
 
+.ContattiAllevamento{
+    border: 3px solid #3F4A44;
+    border-radius: 0 5rem 3rem 5rem;
+    margin-bottom: 2rem;
+    padding-left: 1.3rem;
+}
+
+.ContattiGabri, .ContattiMari{
+    border: 3px solid #3F4A44;
+    border-radius: 5rem 0 5rem 3rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 0.3rem;
+}
+
+
 @media(max-width: 600px) {
     body{
         font-size: 15pt;
