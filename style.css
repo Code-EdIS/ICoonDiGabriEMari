@@ -226,6 +226,36 @@ img{
     font-size: 2rem;
 }
 
+.Titoli{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    justify-content: space-between;
+}
+
+.Compito{
+    text-align: center;
+}
+
+.Nome{
+    margin-right: 5rem;
+    text-align: center;
+}
+
+.Soprannome{
+    margin-left: 5rem;
+    text-align: center;
+}
+
+@keyframes scroll{
+    from {transform: translateY(100%); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.Coda{
+        animation: scroll 2s ease-out forwards;
+    }
+
 @media(max-width: 600px) {
     body{
         font-size: 15pt;
