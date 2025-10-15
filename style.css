@@ -14,8 +14,11 @@ h1, p{
     margin: 1rem;
 }
 
+a{
+    all: unset;
+}
+
 footer{
-    position: fixed;
     background-color: #3F4A44;
     width: 100%;
     bottom: 0;
@@ -23,7 +26,7 @@ footer{
 }
 
 .TestoFooter{
-    margin: 0;
+    margin: 0.5rem;
 }
 
 .titolo, .descrizioneAllevamento{
@@ -103,7 +106,7 @@ img{
     overflow: hidden;
     max-height: 0;
     padding: 0;
-    transition: max-height 0.5 ease, padding 0.5 ease;
+    transition: max-height 4 ease, padding 4 ease;
     gap: 20px;
 }
 
@@ -204,9 +207,24 @@ img{
 }
 
 .Genitore1, .Genitore2{
-    align-self: center;
+    text-align: center;
 }
 
+.PulsanteBack{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3F4A44;
+}
+
+.TestoHeader{
+    margin: 0.3rem;
+}
+
+.Zampa{
+    color: rgb(255, 255, 255, );
+    margin: 0.3rem;
+    font-size: 2rem;
+}
 
 @media(max-width: 600px) {
     body{
