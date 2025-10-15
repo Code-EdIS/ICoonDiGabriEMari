@@ -118,6 +118,10 @@ img{
     font-weight: 500;
 }
 
+.Indizio{
+    font-size: 5pt;
+}
+
 .Menu{
     display: none;
     flex-direction: column;
