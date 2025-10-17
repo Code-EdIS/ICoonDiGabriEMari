@@ -365,4 +365,33 @@ img{
     footer{
         font-size: 15pt;
     }
+    
+    .Cucciolata{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #2E2E2F;
+    border-radius: 5px;
+    box-shadow: 5px  5px 10px #3F4A44;
+    margin-bottom: 1rem;
+}
+
+.SquadPh{
+    width: 100vw;
+    height: auto;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.ParlaCucciolata, .NomiLi{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.g1{
+    width: 1fr;
+}
 }
